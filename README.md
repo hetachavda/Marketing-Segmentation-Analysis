@@ -1,66 +1,87 @@
-# 📊 Marketing Analytics – Customer Segmentation  
+# 📊 Assignment 4 – Predictive & Prescriptive Analysis  
 
-A data-driven **marketing segmentation analysis** project that applies **K-Means Clustering** to classify customers into actionable segments. This project demonstrates how businesses can use segmentation to design **targeted marketing strategies**, improve ROI, and enhance customer engagement.  
+**Course:** Data Warehousing & Visualization (Winter 2025)  
+**Submitted by:** Heta Chavda (NF1014555)  
 
----
+This project consists of two case studies:  
+1. 🏡 **Housing Price Prediction (Predictive Analysis)**  
+2. 🚴 **Bike Sharing Rentals (Prescriptive Analysis)**  
 
-## 📌 Project Overview  
-Market segmentation divides a broad market into smaller, well-defined groups of customers based on shared characteristics.  
-
-### Why Segmentation Matters?  
-- Develop **personalized marketing strategies**  
-- Optimize **resource allocation**  
-- Improve **customer satisfaction & retention**  
-- Boost **return on investment (ROI)**  
+Both were implemented with **Python (EDA, preprocessing)** and **Power BI (dashboards)** to generate actionable business insights.  
 
 ---
 
-## 🎯 Objectives  
-- Segment customers using **demographic and behavioral data**  
-- Identify actionable clusters for **strategic decision-making**  
-- Design **4Ps (Product, Place, Price, Promotion)** strategies per segment  
-- Provide **data-driven recommendations** for marketers  
+## 🏡 Part 1 – Predictive Analysis: Housing Prices  
+
+### 📌 Objective  
+Build a predictive model to estimate **housing prices** based on property characteristics, location, and market conditions.  
+
+### 📂 Dataset  
+- ~1,460 property records  
+- Features: lot area, year built, quality, rooms, basement size, garage, neighborhood, sale year  
+- Target variable: **Sale Price**  
+
+### 🛠️ Methods  
+- **Data Cleaning & Imputation** → Handled missing values using mean/median/mode  
+- **Feature Engineering** → Encoded categorical features, added time-based features  
+- **Exploratory Analysis**:  
+  - Histogram of sale prices  
+  - Scatter plots (lot area vs. sale price, year built vs. price)  
+  - Donut chart of overall quality distribution  
+  - Interactive filters in Power BI for dynamic exploration  
+
+### 📊 Key Findings  
+- Newer and larger homes with higher overall quality → **significantly higher prices**.  
+- Sale price volatility observed during **2006–2010**, capturing impact of the 2008 financial crisis.  
+- Lot size correlates with price, but other factors (quality, neighborhood) are stronger predictors.  
+
+✅ **Conclusion:** Location, property size, and quality are the **primary drivers of property value**, and these insights can help investors and real estate professionals optimize pricing strategies:contentReference[oaicite:1]{index=1}.  
 
 ---
 
-## 📂 Dataset  
-- **Sample Size:** 100 customers  
-- **Variables Analyzed:**  
-  - Age  
-  - Income  
-  - Gender  
-  - Region  
-  - Purchasing Behavior  
-  - Promotion Engagement  
+## 🚴 Part 2 – Prescriptive Analysis: Bike Sharing  
+
+### 📌 Objective  
+Analyze **bike rental demand** to identify trends, seasonal impacts, and operational strategies for optimizing bike-sharing services.  
+
+### 📂 Dataset  
+- **731 daily records (2011–2012)**  
+- Features: date, season, weather, temperature, humidity, windspeed, casual users, registered users, total rentals  
+
+### 🔎 Analysis Perspectives  
+- **Temporal Trends**: Rentals increase year-on-year, peak in summer, dip in winter  
+- **Weekdays vs. Holidays**: Higher rentals on weekdays (work commutes); holidays show leisure-based usage  
+- **Weather Impact**:  
+  - Clear days → highest rentals  
+  - Rain/Snow & extreme humidity → sharp drop in rentals  
+- **User Segments**:  
+  - Registered users dominate on weekdays  
+  - Casual users peak on weekends  
+
+### 📊 Visualizations  
+- Line chart of rentals over time (bell curve peak in summer)  
+- Scatter plots showing weather vs. rental counts  
+- Bar charts for user type comparison  
+- Seasonal trend dashboards in Power BI  
+
+### ✅ Prescriptive Insights  
+- Increase bike availability in **summer & spring months**.  
+- Offer **incentives during winter/off-peak** periods.  
+- Schedule **maintenance during low-demand months**.  
+- Target promotions to **casual users on weekends/holidays** .  
 
 ---
 
-## 🛠️ Methodology  
-
-### Tools Used  
-- **Excel** → Data cleaning & pivot tables  
-- **Python** → K-Means clustering, visualization, strategy generation  
-
-### Steps  
-1. Data preprocessing & cleaning  
-2. Applied **K-Means clustering**  
-3. Identified **4 unique customer segments**  
-4. Generated segment-specific insights and strategies  
+## 🛠️ Tools & Technologies  
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn) – preprocessing & EDA  
+- **Power BI** – interactive dashboards for predictive & prescriptive insights  
+- **Jupyter Notebook / HTML Export** – workflow documentation  
 
 ---
 
-## 👥 Segments Identified  
+## 📌 Overall Conclusion  
+- The **Housing Price dashboard** enables better **property valuation & investment strategies**.  
+- The **Bike Sharing dashboard** supports **operational planning & seasonal demand management**.  
+- Together, these case studies show how **predictive and prescriptive analytics** transform raw datasets into actionable business intelligence.  
 
-### **Cluster 0: Young Professionals**  
-- **Products:** Affordable, modern-featured items  
-- **Place:** Digital platforms (e-commerce)  
-- **Promotion:** Personalized online promotions, loyalty programs  
-
-### **Cluster 1: Wealthy Seniors**  
-- **Products:** Premium, high-end offerings  
-- **Place:** Traditional stores & hybrid online/offline channels  
-- **Promotion:** Loyalty rewards, exclusive targeted campaigns  
-
-### **Cluster 2: Moderately Engaged Professionals**  
-- **Products:** Practical, mid-range items  
-- **Place:** Bala
+---
