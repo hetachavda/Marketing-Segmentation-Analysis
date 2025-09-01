@@ -98,13 +98,6 @@ This project applies **market segmentation** techniques to divide a dataset of 1
 
 ---
 
-## 📂 Project Files  
-- `segmented_data.csv` → Full customer segmentation dataset  
-- `marketing_strategies.json` → Segment-specific marketing strategies  
-- `python_codes/` → Scripts for clustering and visualization  
-
----
-
 ## 📌 Conclusion  
 Through **K-means clustering and behavioral analysis**, this project demonstrates how businesses can **personalize marketing strategies** for diverse customer groups. By balancing **ROI-driven focus on premium clusters** with **inclusive strategies for lower-income groups**, companies can enhance profitability, customer satisfaction, and long-term loyalty.  
 
