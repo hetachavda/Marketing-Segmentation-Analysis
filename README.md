@@ -1,87 +1,111 @@
-# 📊 Assignment 4 – Predictive & Prescriptive Analysis  
+# 📊 Marketing Analytics Segmentation  
 
-**Course:** Data Warehousing & Visualization (Winter 2025)  
-**Submitted by:** Heta Chavda (NF1014555)  
+**Course Project – Group 12**  
+**Date:** 05 December 2024  
 
-This project consists of two case studies:  
-1. 🏡 **Housing Price Prediction (Predictive Analysis)**  
-2. 🚴 **Bike Sharing Rentals (Prescriptive Analysis)**  
-
-Both were implemented with **Python (EDA, preprocessing)** and **Power BI (dashboards)** to generate actionable business insights.  
-
----
-
-## 🏡 Part 1 – Predictive Analysis: Housing Prices  
-
-### 📌 Objective  
-Build a predictive model to estimate **housing prices** based on property characteristics, location, and market conditions.  
-
-### 📂 Dataset  
-- ~1,460 property records  
-- Features: lot area, year built, quality, rooms, basement size, garage, neighborhood, sale year  
-- Target variable: **Sale Price**  
-
-### 🛠️ Methods  
-- **Data Cleaning & Imputation** → Handled missing values using mean/median/mode  
-- **Feature Engineering** → Encoded categorical features, added time-based features  
-- **Exploratory Analysis**:  
-  - Histogram of sale prices  
-  - Scatter plots (lot area vs. sale price, year built vs. price)  
-  - Donut chart of overall quality distribution  
-  - Interactive filters in Power BI for dynamic exploration  
-
-### 📊 Key Findings  
-- Newer and larger homes with higher overall quality → **significantly higher prices**.  
-- Sale price volatility observed during **2006–2010**, capturing impact of the 2008 financial crisis.  
-- Lot size correlates with price, but other factors (quality, neighborhood) are stronger predictors.  
-
-✅ **Conclusion:** Location, property size, and quality are the **primary drivers of property value**, and these insights can help investors and real estate professionals optimize pricing strategies:contentReference[oaicite:1]{index=1}.  
+**Contributors:**  
+- Krishna Patel (NF1017043)  
+- Heta Chavda (NF1014555)  
+- Bijal Panchal (NF1003964)  
+- Bimbo O. Solanke (NF1009888)  
 
 ---
 
-## 🚴 Part 2 – Prescriptive Analysis: Bike Sharing  
-
-### 📌 Objective  
-Analyze **bike rental demand** to identify trends, seasonal impacts, and operational strategies for optimizing bike-sharing services.  
-
-### 📂 Dataset  
-- **731 daily records (2011–2012)**  
-- Features: date, season, weather, temperature, humidity, windspeed, casual users, registered users, total rentals  
-
-### 🔎 Analysis Perspectives  
-- **Temporal Trends**: Rentals increase year-on-year, peak in summer, dip in winter  
-- **Weekdays vs. Holidays**: Higher rentals on weekdays (work commutes); holidays show leisure-based usage  
-- **Weather Impact**:  
-  - Clear days → highest rentals  
-  - Rain/Snow & extreme humidity → sharp drop in rentals  
-- **User Segments**:  
-  - Registered users dominate on weekdays  
-  - Casual users peak on weekends  
-
-### 📊 Visualizations  
-- Line chart of rentals over time (bell curve peak in summer)  
-- Scatter plots showing weather vs. rental counts  
-- Bar charts for user type comparison  
-- Seasonal trend dashboards in Power BI  
-
-### ✅ Prescriptive Insights  
-- Increase bike availability in **summer & spring months**.  
-- Offer **incentives during winter/off-peak** periods.  
-- Schedule **maintenance during low-demand months**.  
-- Target promotions to **casual users on weekends/holidays** .  
+## 📌 Project Overview  
+This project applies **market segmentation** techniques to divide a dataset of 100 customers into **actionable clusters** based on demographic and behavioral data. The goal is to design **segment-specific marketing strategies** that improve personalization, resource allocation, and ROI.  
 
 ---
 
-## 🛠️ Tools & Technologies  
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn) – preprocessing & EDA  
-- **Power BI** – interactive dashboards for predictive & prescriptive insights  
-- **Jupyter Notebook / HTML Export** – workflow documentation  
+## 🎯 Objectives  
+- Identify **customer segments** based on demographics & behaviors.  
+- Apply **K-means clustering** to classify customers.  
+- Generate **marketing strategies (4Ps)** tailored to each segment.  
+- Provide **recommendations** for improving retention and ROI.  
 
 ---
 
-## 📌 Overall Conclusion  
-- The **Housing Price dashboard** enables better **property valuation & investment strategies**.  
-- The **Bike Sharing dashboard** supports **operational planning & seasonal demand management**.  
-- Together, these case studies show how **predictive and prescriptive analytics** transform raw datasets into actionable business intelligence.  
+## 📂 Dataset  
+- **Size:** 100 customers  
+- **Features Analyzed:**  
+  - Demographics → Age, Income, Gender, Region  
+  - Behavior → Purchasing patterns, Promotion engagement  
+
+---
+
+## 🛠️ Methodology  
+- **Tools Used:**  
+  - Excel → Data cleaning & pivot tables  
+  - Python → K-means clustering, visualizations, strategy generation  
+
+- **Steps:**  
+  1. Data preprocessing and cleaning.  
+  2. K-means clustering applied → 4 clusters identified.  
+  3. Visual analysis of age, income, and engagement patterns.  
+  4. Segment-specific 4P (Product, Price, Place, Promotion) strategies created:contentReference[oaicite:0]{index=0}.  
+
+---
+
+## 👥 Segments Identified  
+
+### 🔹 Cluster 0 – Young Professionals  
+- **Products:** Affordable, quality products with modern features  
+- **Place:** Digital platforms  
+- **Promotion:** Personalized online promotions & loyalty programs  
+
+### 🔹 Cluster 1 – Wealthy Seniors  
+- **Products:** Premium, high-end products  
+- **Place:** Traditional retail + hybrid online/offline options  
+- **Promotion:** Loyalty rewards & targeted offers  
+
+### 🔹 Cluster 2 – Moderately Engaged Professionals  
+- **Products:** Practical mid-range items  
+- **Place:** No strong platform preference  
+- **Promotion:** Value-based offers, simple pricing  
+
+### 🔹 Cluster 3 – Low-Income Retirees  
+- **Products:** Affordable, basic goods  
+- **Place:** Local stores & simple online access  
+- **Promotion:** Community-driven campaigns, affordability focus:contentReference[oaicite:1]{index=1}  
+
+---
+
+## 📊 Visualizations (Suggested for Repo)  
+- 📈 Age distribution by segment  
+- 💰 Income distribution by segment  
+- 📊 Stacked bar chart → Engagement & spending patterns  
+- 🥧 Pie charts → 4Ps by segment  
+
+---
+
+## ✅ Key Takeaways  
+- Focus **marketing investment on Segments 0 & 1** for ROI growth.  
+- Use **cost-effective, value-based strategies** for Segments 2 & 3.  
+- Improve **retention of retirees (Cluster 3)** via local partnerships & community programs:contentReference[oaicite:2]{index=2}.  
+
+---
+
+## ⚠️ Limitations & Challenges  
+- Small dataset (100 customers).  
+- Missing/inconsistent data may affect accuracy.  
+- Rapid market changes require frequent re-segmentation.  
+- High cost of personalized promotions for certain groups.  
+
+### Suggestions  
+- Use **real-time customer data** for ongoing updates.  
+- Automate promotions with **AI-based personalization tools**.  
+- Partner with **local communities** to retain low-income retirees.  
+- Pilot strategies on smaller groups to minimize risk:contentReference[oaicite:3]{index=3}.  
+
+---
+
+## 📂 Project Files  
+- `segmented_data.csv` → Full customer segmentation dataset  
+- `marketing_strategies.json` → Segment-specific marketing strategies  
+- `python_codes/` → Scripts for clustering and visualization  
+
+---
+
+## 📌 Conclusion  
+Through **K-means clustering and behavioral analysis**, this project demonstrates how businesses can **personalize marketing strategies** for diverse customer groups. By balancing **ROI-driven focus on premium clusters** with **inclusive strategies for lower-income groups**, companies can enhance profitability, customer satisfaction, and long-term loyalty.  
 
 ---
